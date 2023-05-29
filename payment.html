@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Pelúcias - Pagamento</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <header>
+    <h1>Pokémon Pelúcias - Pagamento</h1>
+  </header>
+
+  <div class="container">
+    <h2>Escolha a forma de pagamento:</h2>
+    <div class="payment-options">
+      <button class="payment-button payment-option" onclick="selectPayment('Débito')">
+        <img src="/src/credit-card.png" alt="Débito" class="payment-image">
+      </button>
+      <button class="payment-button payment-option" onclick="selectPayment('Pix')">
+        <img src="/src/transfer.png" alt="Pix" class="payment-image">
+      </button>
+    </div>
+  </div>
+  <div id="payment-message"></div> 
+  <script src="payment.js"></script>
+</body>
+</html>
